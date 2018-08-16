@@ -29,6 +29,7 @@ def multiply(x, y):
         20
 
     """
+    # todo: Deal with floating points when you have time!
     y_is_negative = y < 0
     x_is_negative = x < 0
     z = sum([abs(x) for _ in range(abs(y))])
