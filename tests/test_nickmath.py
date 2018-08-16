@@ -1,5 +1,5 @@
 import pytest
-from math.nickmath import multiply
+from nickmath import multiply
 
 @pytest.fixture
 def data():
