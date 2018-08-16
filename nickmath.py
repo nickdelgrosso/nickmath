@@ -30,10 +30,16 @@ def multiply(x, y):
 
         >>> multiply(5, -4)
         -20
+
+        >>> multiply(-4, 5)
+        -20
     """
     y_is_negative = y < 0
-    z = sum([x for _ in range(abs(y))])
+    x_is_negative = x < 0
+    z = sum([abs(x) for _ in range(abs(y))])
     if y_is_negative:
+        z *= -1
+    if x_is_negative:
         z *= -1
     return z
 
