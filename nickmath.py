@@ -1,5 +1,6 @@
-
 import math
+
+pi = 3.14
 
 def add(x, y=2):
     "Returns x + y, or x + 2."
@@ -57,9 +58,11 @@ def t_test():
     p = .05
     return StatisticResult(t, p)
 
+
+
+
 if __name__ == '__main__':
-    a, b = t_test()
-    result = t_test()
-    print(t_test())
-    print(a, b)
-    print(result.t)
+    print(get_pi())
+    print(get_pi())
+    print(get_pi())
+    print(get_pi())
