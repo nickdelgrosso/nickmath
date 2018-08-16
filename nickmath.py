@@ -1,4 +1,6 @@
 
+import math
+
 def add(x, y=2):
     "Returns x + y, or x + 2."
     result = x + y
@@ -46,7 +48,9 @@ def multiply(x, y):
         z *= -1
     return z
 
-# print(add(3, y=20) == 23)
-# print(multiply(3, 4) == 12)
-# print(multiply(4, 0) == 0)
-# print(multiply(4, -2) == -8)
+
+if __name__ == '__main__':
+    print(add(3, y=20) == 23)
+    print(multiply(3, 4) == 12)
+    print(multiply(4, 0) == 0)
+    print(multiply(4, -2) == -8)
