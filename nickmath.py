@@ -49,8 +49,17 @@ def multiply(x, y):
     return z
 
 
+from collections import namedtuple
+StatisticResult = namedtuple('StatisticResult', 't p')
+
+def t_test():
+    t = 1
+    p = .05
+    return StatisticResult(t, p)
+
 if __name__ == '__main__':
-    print(add(3, y=20) == 23)
-    print(multiply(3, 4) == 12)
-    print(multiply(4, 0) == 0)
-    print(multiply(4, -2) == -8)
+    a, b = t_test()
+    result = t_test()
+    print(t_test())
+    print(a, b)
+    print(result.t)
