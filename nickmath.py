@@ -33,6 +33,9 @@ def multiply(x, y):
 
         >>> multiply(-4, 5)
         -20
+
+        >>> multiply(-3, -3)
+        9
     """
     y_is_negative = y < 0
     x_is_negative = x < 0
